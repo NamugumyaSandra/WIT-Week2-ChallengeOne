@@ -1,0 +1,22 @@
+{
+  "name": "wit-week2-challengeone",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NamugumyaSandra/WIT-Week2-ChallengeOne.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NamugumyaSandra/WIT-Week2-ChallengeOne/issues"
+  },
+  "homepage": "https://github.com/NamugumyaSandra/WIT-Week2-ChallengeOne#readme",
+  "dependencies": {
+    "readline": "^1.3.0"
+  }
+}
