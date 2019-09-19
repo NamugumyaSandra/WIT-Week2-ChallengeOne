@@ -1,21 +1,21 @@
-const readline = require('./logic');
+const ageGroup = require('./logic')
 
-test('passes when value is NaN', () => {
+test('does not pass when value is NaN', () => {
     expect(NaN).toBeNaN();
     expect(1).not.toBeNaN();
   });
 
-// test('if birth year is 2009 returns a You are a minor.',() => {
-//   expect(2009).toBe('You are a minor.')
-// })
-  
-// test('returns minor when age is less than 18 years', () => {
-//     const data = 2015;
-//     // const age = new Date().getFullYear() - data ;
-//     for(let age=0; age<18; age = new Date().getFullYear() - data  )
-//         expect(age).toBe('You are a minor.');
-//   });
+test(`29 years is equal to 'You are still a youth.'`, () => {
+    expect(ageGroup(29)).toBe('You are still a youth.');
+});
 
+test(`9 years is equal to 'You are a minor.'`, () => {
+  expect(ageGroup(9)).toBe('You are a minor.');
+});
+
+test(`99 years is equal to 'You are an elder.'`, () => {
+  expect(ageGroup(99)).toBe('You are an elder.');
+});
 
 
 
