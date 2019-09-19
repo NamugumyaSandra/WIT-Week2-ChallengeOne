@@ -28,4 +28,4 @@ readline.question('What is your birth year?',birthYear => {
 
     });
 
-    module.exports = readline;
+    module.exports =ageGroup;
